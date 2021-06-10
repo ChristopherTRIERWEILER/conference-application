@@ -1,6 +1,6 @@
 ---
 - name: Install Jenkins CI/CD
-  hosts: centos_remote_a
+  hosts: all
   tasks:
     - name: Docker test exists
       shell: docker ps --all --quiet --filter=name="conference-test"
