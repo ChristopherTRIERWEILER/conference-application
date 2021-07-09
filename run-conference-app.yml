@@ -1,5 +1,5 @@
 ---
-- name: Install Jenkins CI/CD
+- name: Install Jenkins CI/CD for conference app
   hosts: all
   tasks:
     - name: Docker test exists
