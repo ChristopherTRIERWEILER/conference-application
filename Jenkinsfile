@@ -11,7 +11,7 @@ pipeline {
         }
         stage('build conference-app') {
           steps{
-              git url: ' https://github.com/promogekko/conference-application.git'
+              git url: 'https://github.com/ChristopherTRIERWEILER/conference-application.git'
               sh "mvn clean install package"
               archiveArtifacts artifacts: '**/*.war', followSymlinks: false
            }
